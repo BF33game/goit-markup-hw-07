@@ -1,0 +1,40 @@
+.section-hero {
+	padding: 200px 0;
+	background-color: var(--background-color);
+	text-align: center;
+	background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../images/img.jpg");
+}
+.hero {
+	width: 696px;
+	margin-right: auto;
+	margin-left: auto;
+	color: var(--white-color);
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.button {
+	color: var(--white-color);
+	font-family: Roboto, sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	background-color: var(--accent-text-color);
+	padding: 10px 32px;
+	border: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	transition: background-color var(--transform--), color var(--transform--);
+	&:hover {
+		color: var(--secondary-text-color);
+		background-color: var(--background-color-button);
+	}
+	&:focus {
+		color: var(--secondary-text-color);
+		background-color: var(--background-color-button);
+	}
+}
