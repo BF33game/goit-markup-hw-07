@@ -1,14 +1,14 @@
-.photo{
+m.photo-section{
     padding-top: 0px;
 }
 .photo-list{
     display: flex;
     justify-content: space-between;
 }
-.photo-item{
+.photo-list__item{
     position: relative;
 }
-.photo-text-wrap{
+.photo-list__text-wrap{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -16,7 +16,7 @@
     background: rgba(47, 48, 58, 0.8);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.photo-text{
+.photo-list__text{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

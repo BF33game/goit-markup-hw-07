@@ -93,23 +93,23 @@ body {
   text-decoration: none;
 }
 
-.logo-top {
-  color: #000000;
-}
-
-.header-border {
+.header {
   border-bottom: 1px solid #ECECEC;
 }
 
-.page-header {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav {
+.header__nav {
   display: flex;
   align-items: center;
+}
+
+.header__logo {
+  color: #000000;
 }
 
 .site-nav {
@@ -117,11 +117,11 @@ body {
   margin-left: 93px;
 }
 
-.site-nav-item + .site-nav-item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
-.link {
+.site-nav__link {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -132,19 +132,19 @@ body {
   padding: 32px 0;
   transition: color var(--transform--);
 }
-.link:hover {
+.site-nav__link:hover {
   color: var(--accent-text-color);
 }
-.link:focus {
+.site-nav__link:focus {
   color: var(--accent-text-color);
 }
 
-.link.current {
+.site-nav__link--current {
   color: var(--accent-text-color);
   position: relative;
 }
 
-.current::after {
+.site-nav__link--current::after {
   content: "";
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -161,15 +161,15 @@ body {
   display: flex;
 }
 
-.auth-nav-item {
+.auth-nav__item {
   display: flex;
   align-items: center;
 }
-.auth-nav-item:last-child {
+.auth-nav__item:last-child {
   margin-left: 50px;
 }
 
-.link-nav {
+.auth-nav__link {
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -180,14 +180,14 @@ body {
   align-items: center;
   transition: color var(--transform--);
 }
-.link-nav:hover {
+.auth-nav__link:hover {
   color: var(--accent-text-color);
 }
-.link-nav:focus {
+.auth-nav__link:focus {
   color: var(--accent-text-color);
 }
 
-.header-svg {
+.auth-nav__svg {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -240,11 +240,11 @@ body {
   justify-content: space-between;
 }
 
-.benefits-list {
+.benefits__list {
   max-width: 270px;
 }
 
-.benefits-svg-wrap {
+.benefits__svg-wrap {
   width: 270px;
   height: 120px;
   background: #F5F4FA;
@@ -252,11 +252,11 @@ body {
   margin-bottom: 30px;
 }
 
-.benefits-svg {
+.benefits__svg {
   margin: 25px 100px;
 }
 
-.benefits-title {
+.benefits__title {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -265,7 +265,7 @@ body {
   margin-bottom: 10px;
 }
 
-.benefits-text {
+.benefits__text {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -281,7 +281,7 @@ body {
   margin-bottom: 50px;
 }
 
-.photo {
+m.photo-section {
   padding-top: 0px;
 }
 
@@ -290,11 +290,11 @@ body {
   justify-content: space-between;
 }
 
-.photo-item {
+.photo-list__item {
   position: relative;
 }
 
-.photo-text-wrap {
+.photo-list__text-wrap {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -303,7 +303,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.photo-text {
+.photo-list__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

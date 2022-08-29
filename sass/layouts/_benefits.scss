@@ -2,20 +2,20 @@
     display: flex;
     justify-content: space-between;
 }
-.benefits-list{
+.benefits__list{
     max-width: 270px;
 }
-.benefits-svg-wrap{
+.benefits__svg-wrap{
     width: 270px;
     height: 120px;
     background: #F5F4FA;
     display: flex;
     margin-bottom: 30px;
 }
-.benefits-svg{
+.benefits__svg{
   margin: 25px 100px;
 }
-.benefits-title{
+.benefits__title{
     color: var(--secondary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -23,7 +23,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.benefits-text{
+.benefits__text{
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
